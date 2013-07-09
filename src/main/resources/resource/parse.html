@@ -1,0 +1,54 @@
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Hipu Date Parser</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/prototype.js" type="text/javascript"></script>
+    <script src="js/Parser.js" type="text/javascript"></script>
+    <script src="js/ParseTree.js" type="text/javascript"></script>
+    <script src="js/AbstractSyntaxTree.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    
+    <div id="content">
+	    <h1 >Hipu Date Parser</h1>
+      <p>enter something resembling a date</p>
+	    <input type="text" id="text_input" />
+	
+	    <div id="submit_row">
+	      <a href="#" id="submit">parse</a>
+	      <img src="images/loading.gif" alt="loading..." id="loading" style="display:none" />
+	    </div>
+	
+			<div id="error" style="display:none">
+        Sorry, hipu parser can't parse that.
+      </div>
+
+      <div id="empty" style="display:none">
+        hipu parser is pretty good, but we need <em>some</em> input
+      </div>
+			
+			<div id="date_wrapper">
+			  <span id="date" style="display:none;"></span>
+			</div>
+			
+			<div id="summary" style="display:none">
+			  <div id="structure">
+			    <h2>here's how we broke it down:</h2>
+			    <div id="structure_details"></div>
+			  </div>
+			
+			  <div id="ast">
+			    <h2>and here's the syntax tree we built:</h2>
+			    <div id="ast_details"></div>
+			  </div>
+			</div>
+    </div>
+  </body>
+</html>
